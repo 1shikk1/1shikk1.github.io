@@ -1,2 +1,0 @@
-# JGIS
- Pagina web jgis
