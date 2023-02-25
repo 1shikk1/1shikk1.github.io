@@ -1,10 +1,12 @@
 /* Para que el navbar ocupe todo el ancho de la página */
 .navbar {
+    font-family: 'Roboto', sans-serif;
     width: 100%;
   }
   
   /* Para que los enlaces del navbar estén uno al lado del otro */
   .navbar-nav {
+    font-family: 'Roboto', sans-serif;
     display: flex;
     justify-content: space-between;
   }
@@ -17,4 +19,22 @@
   /* Para que el logo esté a la izquierda en pantallas pequeñas */
   .navbar-brand {
     order: -1;
+  }
+  .navbar-brand img {
+    width: 150px;
+    height: auto;
+  }
+  @media (min-width: 420px) {
+    .navbar .navbar-toggler {
+      display: none;
+    }
+  }
+  @media (max-width: 767px) {
+    .navbar-nav .nav-link {
+      display: none;
+    }
+  
+    .navbar-nav.show .nav-link {
+      display: block;
+    }
   }
